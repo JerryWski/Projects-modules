@@ -12,5 +12,29 @@
 
 html {
   font-size: 62, 5%;
-  background-color: rgb(143, 126, 126);
+  background-color: hsl(30, 38%, 92%)
 }
+
+.main {
+    max-width: 1440px;
+}
+
+.card {
+    display: flex;
+    margin: 3em 2em;
+    max-width: 800px;
+    border: 1px solid red;
+    background-color: #fff;
+    
+}
+
+@media (max-width: 375px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+
