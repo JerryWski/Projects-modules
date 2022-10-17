@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 
 <html lang="PL">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Product card</title>
-        <meta name="viewport" content="width=width-device, initial-scale=1">
-        <meta name="description" content="Jak zrobić ćwiczenie z kursu Frontend Mentor, aby zostać Frontend Developerem">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/style.css"> 
-        <link rel="shortcut icon" href="#"> <!--to po to aby nie było błędu w konsoli-->
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product card</title>
+    <meta name="viewport" content="width=width-device, initial-scale=1" />
+    <meta
+      name="description"
+      content="Jak zrobić ćwiczenie z kursu Frontend Mentor, aby zostać Frontend Developerem"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <!--to po to aby nie było błędu w konsoli-->
+  </head>
 
-    <body>
-   
-        <section class="main">
-            <div class="wrapper">
-                
-            </div>
-        </section>
+  <body>
+    <div class="card">
+      <img
+        class="card__image"
+        src="./img/image-product-mobile.jpg"
+        alt="Chanel bottle perfume"
+      />
+      <div class="card__body">
+        <p class="card__text"><span class="upper-text">Perfume</span></p>
+        <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="card__text">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of
+          <span class="upper-text">Chanel</span>
+        </p>
+        <div class="card__price">
+          <p class="price__left price__left--highlight">149.99</p>
+          <p class="price-right price-right--crossed">169.99</p>
+        </div>
+        <div class="card__btn">
+            <div class="card__btn card__btn--highlight"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i> Add to Cart</div>
+        </div>
+      </div>
+    </div>
 
-
-    <script src="https://kit.fontawesome.com/4619b49638.js"></script>    
+    <script src="https://kit.fontawesome.com/4619b49638.js"></script>
     <script src="javascript/main.js"></script>
-
-    </body>
+  </body>
 </html>
