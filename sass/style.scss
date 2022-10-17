@@ -30,12 +30,15 @@ html {
   background-color: #fff;
   border-radius: 7px;
   margin: 0 1em;
-  
+  overflow: hidden;
 
   &__image {
     width: 100%;
     object-fit: cover;
-    border-radius: 7px;
+  }
+
+  .card__body {
+    padding: 1.5em;
   }
 }
 

@@ -39,12 +39,15 @@ html {
   background-color: #fff;
   border-radius: 7px;
   margin: 0 1em;
+  overflow: hidden;
 }
 .card__image {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 7px;
+}
+.card .card__body {
+  padding: 1.5em;
 }
 
 @media (max-width: 375px) {
