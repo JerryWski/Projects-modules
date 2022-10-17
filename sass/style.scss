@@ -12,29 +12,39 @@
 
 html {
   font-size: 62, 5%;
-  background-color: hsl(30, 38%, 92%)
+  background-color: hsl(30, 38%, 92%);
 }
 
 .main {
-    max-width: 1440px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
 }
 
 .card {
-    display: flex;
-    margin: 3em 2em;
-    max-width: 800px;
-    border: 1px solid red;
-    background-color: #fff;
-    
+  display: flex;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 0 1em;
+  
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+  }
 }
 
 @media (max-width: 375px) {
-    .card {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+  .card {
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
     }
+  }
 }
-
-

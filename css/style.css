@@ -18,16 +18,33 @@ html {
 
 .main {
   max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: auto;
 }
 
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3em 2em;
   max-width: 800px;
-  border: 1px solid red;
   background-color: #fff;
+  border-radius: 7px;
+  margin: 0 1em;
+}
+.card__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
 }
 
 @media (max-width: 375px) {
@@ -36,12 +53,8 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: auto;
+  }
+  .card__image {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
