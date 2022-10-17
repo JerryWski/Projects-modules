@@ -50,12 +50,19 @@ html {
 .card .card__body {
   padding: 1.5em;
 }
-.card .card__body .card__body-text {
+.card .card__body-text {
   color: hsl(228deg, 12%, 48%);
   padding-bottom: 0.5em;
 }
-.card .card__body .card__body-text .upper-text {
+.card .card__body-text .upper-text {
   text-transform: uppercase;
+}
+.card .card__body-title {
+  font-family: "Fraunces", serif;
+}
+.card .card__body-text:last-of-type {
+  padding-top: 1em;
+  padding-bottom: 1.5em;
 }
 
 @media (max-width: 375px) {
