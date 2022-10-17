@@ -12,6 +12,7 @@
 
 html {
   font-size: 62, 5%;
+  font-family: 'Montserrat','Fraunces', serif, sans-serif;
   background-color: hsl(30, 38%, 92%);
 }
 
@@ -39,6 +40,14 @@ html {
 
   .card__body {
     padding: 1.5em;
+
+    .card__body-text {
+        color: hsl(228, 12%, 48%);
+        padding-bottom: 0.5em;
+        .upper-text {
+            text-transform: uppercase;
+        }
+    }
   }
 }
 
