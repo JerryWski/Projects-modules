@@ -80,6 +80,7 @@ html {
 .card .card__body .card-prices .price-right {
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
+  margin-left: 1.5em;
 }
 
 @media (max-width: 375px) {
