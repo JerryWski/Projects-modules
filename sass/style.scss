@@ -44,34 +44,54 @@ html {
     &-text {
       color: hsl(228, 12%, 48%);
       padding-bottom: 0.5em;
+      font-size: 0.9rem;
       .upper-text {
         text-transform: uppercase;
       }
     }
     &-title {
-        font-family: "Fraunces", serif;
+      font-family: "Fraunces", serif;
     }
 
     &-text:last-of-type {
-        padding-top: 1em;
-        padding-bottom: 1.5em;
+      padding-top: 1em;
+      padding-bottom: 1.5em;
     }
 
     .card-prices {
-        display: flex;
-        align-items: center;
-        
-        .price-left {
-            color: hsl(158, 36%, 37%);
-            font-size: 2rem;
-            font-family: "Fraunces", serif;
-        }
-        .price-right {
-            color: hsl(228, 12%, 48%);
-            text-decoration: line-through;
-            margin-left: 1.5em;
-        }
-        
+      display: flex;
+      align-items: center;
+
+      .price-left {
+        color: hsl(158, 36%, 37%);
+        font-size: 2rem;
+        font-family: "Fraunces", serif;
+      }
+      .price-right {
+        color: hsl(228, 12%, 48%);
+        text-decoration: line-through;
+        margin-left: 1.5em;
+        font-size: 0.9rem;
+      }
+    }
+
+    .card__btn {
+      text-align: center;
+      border-radius: 5px;
+      margin-top: 1.5em;
+      color: #fff;
+      background-color: hsl(158, 36%, 37%);
+      cursor: pointer;
+      padding: 1em;
+      transition: .3s;
+
+      .fa-solid {
+        margin-right: 0.5em;
+      }
+    }
+
+    .card__btn--highlight:hover {
+      background-color: hsl(166, 42%, 14%);
     }
   }
 }

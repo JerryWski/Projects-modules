@@ -53,6 +53,7 @@ html {
 .card .card__body-text {
   color: hsl(228deg, 12%, 48%);
   padding-bottom: 0.5em;
+  font-size: 0.9rem;
 }
 .card .card__body-text .upper-text {
   text-transform: uppercase;
@@ -81,6 +82,24 @@ html {
   color: hsl(228deg, 12%, 48%);
   text-decoration: line-through;
   margin-left: 1.5em;
+  font-size: 0.9rem;
+}
+.card .card__body .card__btn {
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 1.5em;
+  color: #fff;
+  background-color: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+  padding: 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.card .card__body .card__btn .fa-solid {
+  margin-right: 0.5em;
+}
+.card .card__body .card__btn--highlight:hover {
+  background-color: hsl(166deg, 42%, 14%);
 }
 
 @media (max-width: 375px) {
