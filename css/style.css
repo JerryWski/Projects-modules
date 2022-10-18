@@ -36,16 +36,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 800px;
+  width: 600px;
   background-color: #fff;
   border-radius: 7px;
   margin: 0 1em;
   overflow: hidden;
-}
-.card__image {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .card .card__body {
   padding: 1.5em;
@@ -54,12 +49,16 @@ html {
   color: hsl(228deg, 12%, 48%);
   padding-bottom: 0.5em;
   font-size: 0.9rem;
+  line-height: 1.5rem;
 }
 .card .card__body-text .upper-text {
   text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1rem;
 }
 .card .card__body-title {
   font-family: "Fraunces", serif;
+  font-size: 1.8rem;
 }
 .card .card__body-text:last-of-type {
   padding-top: 1em;
@@ -108,8 +107,25 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 700px;
   }
-  .card__image {
+  .card .image-container {
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    background-image: url("/img/image-product-mobile.jpg");
+  }
+}
+@media (min-width: 376px) {
+  .card {
+    min-height: 400px;
+  }
+  .card .image-container {
+    width: 100%;
+    background-size: cover;
+    background-image: url("/img/image-product-desktop.jpg");
+  }
+  .card .card__body {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
