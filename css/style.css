@@ -45,7 +45,7 @@ html {
 .card .image-container {
   width: 50%;
   background-size: cover;
-  background-image: url("/img/image-product-desktop.jpg");
+  background-image: url(../img/desktop.JPG);
 }
 .card .card__body {
   padding: 1.5em;
@@ -120,7 +120,7 @@ html {
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-image: url("/img/image-product-mobile.jpg");
+    background-image: url(../img/mobile.JPG);
   }
   .card .card__body {
     width: 100%;
