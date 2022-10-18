@@ -42,10 +42,18 @@ html {
   margin: 0 1em;
   overflow: hidden;
 }
-.card .image-container {
+.card picture {
+  display: block;
   width: 50%;
-  background-size: cover;
-  background-image: url(../img/desktop.jpg);
+  max-width: 1440px;
+}
+.card picture img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card picture > * {
+  max-width: 100%;
 }
 .card .card__body {
   padding: 1.5em;
@@ -115,12 +123,8 @@ html {
             flex-direction: column;
     height: 700px;
   }
-  .card .image-container {
-    background-position: center;
-    height: 100%;
+  .card picture {
     width: 100%;
-    background-size: cover;
-    background-image: url(../img/mobile.jpg);
   }
   .card .card__body {
     width: 100%;
