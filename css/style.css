@@ -42,8 +42,14 @@ html {
   margin: 0 1em;
   overflow: hidden;
 }
+.card .image-container {
+  width: 50%;
+  background-size: cover;
+  background-image: url("/img/image-product-desktop.jpg");
+}
 .card .card__body {
   padding: 1.5em;
+  width: 50%;
 }
 .card .card__body-text {
   color: hsl(228deg, 12%, 48%);
@@ -112,20 +118,16 @@ html {
   .card .image-container {
     background-position: center;
     height: 100%;
+    width: 100%;
     background-size: cover;
     background-image: url("/img/image-product-mobile.jpg");
+  }
+  .card .card__body {
+    width: 100%;
   }
 }
 @media (min-width: 376px) {
   .card {
     min-height: 400px;
-  }
-  .card .image-container {
-    width: 100%;
-    background-size: cover;
-    background-image: url("/img/image-product-desktop.jpg");
-  }
-  .card .card__body {
-    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
